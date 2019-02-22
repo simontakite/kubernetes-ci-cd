@@ -1,7 +1,6 @@
-#FROM nginx:latest
-FROM relution/buildbox-html5
+FROM nginx:latest
 
 WORKDIR /usr/share/nginx/html/
-ADD uza/* ./
+ADD website/* ./
 
 EXPOSE 80
