@@ -23,6 +23,6 @@ node {
 
     stage "Deploy"
 
-        sh "sed 's/__IMAGE__/$BUILDIMG/' applications/hello-kenzan/k8s/deployment.yaml | kubectl apply -f -"
+        sh "sed -e 's/__IMAGE__/$BUILDIMG/' applications/hello-kenzan/k8s/deployment.yaml | kubectl apply -f -"
 
 }
