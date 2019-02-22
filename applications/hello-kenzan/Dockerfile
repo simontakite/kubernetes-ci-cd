@@ -1,6 +1,6 @@
 FROM nginx:latest
 
 WORKDIR /usr/share/nginx/html/
-ADD uza/* .
+ADD uza/* ./
 
 EXPOSE 80
