@@ -22,6 +22,7 @@ node {
 
     stage "Deploy"
 
-        kubernetesDeploy configs: "applications/${appName}/k8s/*.yaml", kubeconfigId: 'kenzan_kubeconfig'
+        #kubernetesDeploy configs: "applications/${appName}/k8s/*.yaml", kubeconfigId: 'kenzan_kubeconfig'
+        sh "kubectl get pods --all-namespaces"
 
 }
