@@ -1,6 +1,6 @@
 FROM nginx:latest
 
 WORKDIR /usr/share/nginx/html/
-ADD website/* ./
+COPY website/* ./
 
 EXPOSE 80
