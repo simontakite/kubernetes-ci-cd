@@ -22,6 +22,6 @@ node {
 
     stage "Deploy"
 
-        kubernetesDeploy configs: "applications/${appName}/k8s/*.yaml", kubeconfigId: 'kenzan_kubeconfig'
+    sh "sed 's/$BUILD_TAG/${tag}/' applications/hello-kenzan/k8s/deployment.yaml | kubectl apply -f -"
 
 }
