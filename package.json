@@ -9,7 +9,8 @@
     "fetch-retry": "^1.1.0",
     "inquirer": "^3.0.6",
     "rx": "^4.1.0",
-    "yamljs": "^0.2.8"
+    "yamljs": "^0.2.8",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {},
   "scripts": {
@@ -18,7 +19,9 @@
     "part1": "node start.js part1.yml",
     "part2": "node start.js part2.yml",
     "part3": "node start.js part3.yml",
-    "part4": "node start.js part4.yml"
+    "part4": "node start.js part4.yml",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -29,5 +32,6 @@
   "bugs": {
     "url": "https://github.com/kenzanlabs/kubernetes-ci-cd/issues"
   },
-  "homepage": "https://github.com/kenzanlabs/kubernetes-ci-cd#readme"
+  "homepage": "https://github.com/kenzanlabs/kubernetes-ci-cd#readme",
+  "snyk": true
 }
