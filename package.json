@@ -6,7 +6,7 @@
   "dependencies": {
     "cmdify": "^0.0.4",
     "colors": "^1.1.2",
-    "fetch-retry": "^1.1.0",
+    "fetch-retry": "^3.0.0",
     "inquirer": "^3.0.6",
     "rx": "^4.1.0",
     "yamljs": "^0.2.8"
